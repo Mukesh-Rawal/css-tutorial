@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 10px;
+            
+        }
+        .brdr{
+            height: 50px;
+            width: 60px;
+        }
+        #border{
+            border: 5px dotted black;
+            background-color: aqua;
+            box-sizing: content-box;        /* content-box default value*/
+        }
+
+        #border2{
+            border:  5px solid aquamarine;
+            border-radius: 10px;
+            background-color: yellow;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="border" class="brdr">
+        Border Checker
+    </div>
+    <div id="border2" class="brdr">
+        Border Checker
+    </div>
+</body>
+</html>

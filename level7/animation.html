@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animation </title>
+    <style>
+        
+    .anmi{
+        height: 100px;
+        width: 150px;
+        background-color: blueviolet;
+        border: 2px solid red;
+        border-radius: 20px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+
+        animation-name: ghumakkad;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: .25s;
+
+        animation-iteration-count:infinite;
+        animation-direction:alternate-reverse;
+
+    }
+    @keyframes ghumakkad {
+    from{ left: 10px;}
+    to{ left: 700px;}
+    }
+    </style>
+</head>
+<body>
+    <div id="anmi" class="anmi">Animated Box</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Scale</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 20%;
+            background-color: purple;
+            /*position: relative;
+            top: 50px;
+            left: 50px;
+            transform: rotate(45deg);*/
+            transition: all .5s ease-in .5s;
+        }
+        #box1:hover{
+            transform: Scale(2);
+            
+        }
+        #box2:hover{
+            background-color: aqua;
+            transform: Scalex(3);
+        }
+        #box3:hover{
+            background-color: brown;
+            transform: Scaley(2.5);
+        }
+        #box4:hover{
+           background-color: rgb(53, 50, 204);
+            transform: Scale(.5);
+        }
+        #cont{
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div id="box1" class="box">Box</div> <br>
+        <div id="box2" class="box">Box</div><br>
+        <div id="box3" class="box">Box</div><br>
+        <div id="box4" class="box">Box</div><br>
+    </div>
+    
+</body>
+</html>

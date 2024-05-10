@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Skew</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 20%;
+            background-color: purple;
+            /*position: relative;
+            top: 50px;
+            left: 50px;
+            transform: rotate(45deg);*/
+            transition: all .5s ease-in .5s;
+        }
+        #box1:hover{
+            transform: Skew(39deg)
+            
+        }
+        #box2:hover{
+            
+            background-color: aqua;
+            transform: Skewx(20deg)
+        }
+        #box3:hover{
+            background-color: brown;
+            transform: Skewy(30deg)
+        }
+        #box4:hover{
+           background-color: rgb(53, 50, 204);
+           transform: Skew(140deg)
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box</div> <br>
+    <div id="box2" class="box">Box</div><br>
+    <div id="box3" class="box">Box</div><br>
+    <div id="box4" class="box">Box</div><br>
+</body>
+</html>
